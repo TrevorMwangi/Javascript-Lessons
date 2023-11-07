@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pattern Generator</title>
+</head>
+<body>
+
+<script>
+function generatePattern(rows) {
+  let pattern = '';
+
+  for (let i = 1; i <= rows; i++) {
+    for (let j = 1; j <= i; j++) {
+      pattern += '*';
+    }
+    pattern += '<br />'; // Add a line break after each row
+  }
+
+  document.write(pattern); // Output the pattern directly to the webpage
+}
+
+// Call the function with the desired number of rows
+generatePattern(6);
+</script>
+
+</body>
+</html>
